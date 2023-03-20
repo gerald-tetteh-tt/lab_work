@@ -4,9 +4,9 @@
 
 void displayNotDivisibleTable(int number)
 {
-    int count = 0;
+    int count = 1;
     int loop_idx = 0;
-    while (count < 30)
+    while (count <= 30)
     {
         if((loop_idx % number) != 0)
         {
@@ -19,9 +19,9 @@ void displayNotDivisibleTable(int number)
 
 void displayMultiplicationTable(int number)
 {
-    for(int i = 0; i < 20; i++)
+    for(int i = 1; i <= 20; i++)
     {
-        std::cout << i+1 << " x " << number << " = " << number * (i+1) << std::endl;
+        std::cout << i << " x " << number << " = " << number * (i) << std::endl;
     }
 }
 
@@ -30,12 +30,13 @@ void question3()
     int number;
     std::cout << "Please enter a number: ";
     std::cin >> number;
-    if(number % 2 != 0)
+    if(number % 2 == 0)
     {
-        displayNotDivisibleTable(number);
+        displayMultiplicationTable(number);
         return;
     }
-    displayMultiplicationTable(number);
+    std::cout << "Number is odd";
+    displayNotDivisibleTable(number);
 }
 
 int main()
