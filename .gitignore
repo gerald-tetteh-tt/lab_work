@@ -68,4 +68,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Build
+output/
+
 # End of https://www.toptal.com/developers/gitignore/api/windows,java,linux
