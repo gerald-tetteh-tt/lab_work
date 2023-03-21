@@ -69,6 +69,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # Build
-output/
+*.exe
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,java,linux
