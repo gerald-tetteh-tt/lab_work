@@ -71,4 +71,7 @@ $RECYCLE.BIN/
 # Build
 *.exe
 
+#vscode
+.vscode
+
 # End of https://www.toptal.com/developers/gitignore/api/windows,java,linux
