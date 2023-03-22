@@ -15,10 +15,16 @@ int main()
         std::cin >> strings[count];
         count++;
     }
-    int max_size = 0;
-    std::string largest_string;
-    for(int i = 0; i < 10; i++)
+    int max_size = strings[0].length();
+    std::string largest_string = strings[0];
+    for(int i = 1; i < 10; i++)
     {
-        
+        int size = strings[i].length();
+        if(size > max_size)
+        {
+            max_size = size;
+            largest_string = strings[i];
+        }
     }
+    std::cout << largest_string << std::endl;
 }
