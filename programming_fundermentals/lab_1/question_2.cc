@@ -17,14 +17,14 @@ int main()
     {
         std::cout << "Enter number " << i + 1 << ": ";
         std::cin >> numbers[i];
-        sum += numbers[i];
+        sum += numbers[i];            
     }
 
     // sort array
     // pass a pointer to the fist and last element +1
     std::sort(numbers, numbers + 5);
 
-    mean = sum / 5;
+    mean = sum / 5.0;
     // since the total is an odd number
     median = numbers[2];
     // to find mode
@@ -36,7 +36,7 @@ int main()
     // find max occurance
     int maxCount = numberCount[numbers[0]];
     mode = numbers[0];
-    for (auto item : numberCount)
+    for (std::pair item : numberCount)
     {
         if (maxCount < item.second)
         {
