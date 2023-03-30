@@ -15,24 +15,11 @@ public class Client {
     public void setSpendingLimit(double value) {
         if(value < 0) return;
         this.spendingLimit = value;
-    }
-
-    public boolean canTrade() {
-        if(this.membershipType instanceof Bronze) {
-            Bronze bronze = (Bronze) membershipType;
-            if(!bronze.canTrade()) {
-                return false;
-            }
-        }
-        boolean exceededTradeLimit = totalTradesToday >= membershipType.getMaxTradesPerDay();
-        if(membershipType.getHasSpendingLimit()) {
-            return !exceededTradeLimit && (totalValueOfTrades < spendingLimit);
-        }
-        return exceededTradeLimit ? false: true;
+        membershipType.setSpendingLimit(value);
     }
 
     public void addTrade(Trade trade) {
-        if (!this.canTrade()) return;
+        if (!membershipType.canTrade(totalTradesToday,totalValueOfTrades)) return;
         this.points++;
         this.totalTradesToday++;
         this.totalValueOfTrades += trade.getValue();
