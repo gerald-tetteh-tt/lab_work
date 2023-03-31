@@ -19,7 +19,7 @@ public class Client {
     }
 
     public void addTrade(Trade trade) {
-        if (!membershipType.canTrade(totalTradesToday,totalValueOfTrades)) return;
+        if (membershipType.canTrade(totalTradesToday, totalValueOfTrades)) return;
         this.points++;
         this.totalTradesToday++;
         this.totalValueOfTrades += trade.getValue();

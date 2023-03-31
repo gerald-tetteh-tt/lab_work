@@ -2,18 +2,36 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public enum MembershipType {
-    BRONZE(5,false,1),
-    SILVER(10,true,10),
-    GOLD(20,false,20);
+    BRONZE(5,1) {
+        private boolean checkTimeLimit() {
+            LocalTime timeLimit = LocalTime.of(10,0,0);
+            LocalTime currentTime = LocalTime.now();
+            return currentTime.isAfter(timeLimit);
+        }
 
-    private final int maxTradesPerDay;
-    private final boolean hasSpendingLimit;
-    private double spendingLimit;
+        @Override
+        public boolean canTrade(int totalTrades, double totalValueOfTrades) {
+            if(!checkTimeLimit()) {
+                return false;
+            }
+            return super.canTrade(totalTrades, totalValueOfTrades);
+        }
+    },
+    SILVER(10,10) {
+
+        public boolean canTrade(int totalTrades, double totalValueOfTrades) {
+            boolean exceededTradeLimit = totalTrades >= this.maxTradesPerDay;
+            return exceededTradeLimit || (!(totalValueOfTrades < spendingLimit));
+        }
+    },
+    GOLD(20,20);
+
+    protected final int maxTradesPerDay;
+    protected double spendingLimit;
     private final int minimumPoints;
 
-    MembershipType(int maxTradesPerDay, boolean hasSpendingLimit, int minimumPoints) {
+    MembershipType(int maxTradesPerDay, int minimumPoints) {
         this.maxTradesPerDay = maxTradesPerDay;
-        this.hasSpendingLimit = hasSpendingLimit;
         this.minimumPoints = minimumPoints;
         this.spendingLimit = 1000;
     }
@@ -23,23 +41,7 @@ public enum MembershipType {
         this.spendingLimit = value;
     }
 
-    private boolean bronzeCanTrade() {
-        LocalTime timeLimit = LocalTime.parse("10:00:00+00:00",
-                DateTimeFormatter.ISO_TIME);
-        LocalTime currentTime = LocalTime.now();
-        return currentTime.isAfter(timeLimit);
-    }
-
     public boolean canTrade(int totalTrades, double totalValueOfTrades) {
-        if(this == BRONZE) {
-            if(!bronzeCanTrade()) {
-                return false;
-            }
-        }
-        boolean exceededTradeLimit = totalTrades >= this.maxTradesPerDay;
-        if(this.hasSpendingLimit) {
-            return !exceededTradeLimit && (totalValueOfTrades < spendingLimit);
-        }
-        return !exceededTradeLimit;
+        return totalTrades < this.maxTradesPerDay;
     }
 }
