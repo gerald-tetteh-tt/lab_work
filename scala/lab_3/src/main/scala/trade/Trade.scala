@@ -1,7 +1,7 @@
 package io.turntabl
 package trade
 
-case class Trade(val id: String, val symbol: String, val quantity: Int, initialPrice: Double) {
+case class Trade(val id: String, val symbol: String, val quantity: Int, private val initialPrice: Double) {
   private var _price = initialPrice
 
   def price: Double = _price
