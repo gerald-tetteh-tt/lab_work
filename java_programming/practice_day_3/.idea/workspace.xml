@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e309842c-a9d2-44f4-a4cb-65a7444da97d" name="Changes" comment="Complete assignment">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/turntabl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/turntabl/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2PK4GBJTrbthNCVGqZJeU56Ws9S" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gerald.addo-tetteh\Documents\lab_work\java_programming\practice_day_3\src\main\java\io\turntabl\mostCommonLeastCommon" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="io.turntabl.uniqueString" />
+      <recent name="io.turntabl.Palindrome" />
+      <recent name="io.turntabl.mostCommonLeastCommon" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.turntabl.Main" />
+      <module name="practice_day_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.turntabl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MostCommonLeastCommonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="practice_day_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.turntabl.mostCommonLeastCommon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.turntabl.mostCommonLeastCommon" />
+      <option name="MAIN_CLASS_NAME" value="io.turntabl.mostCommonLeastCommon.MostCommonLeastCommonTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PalindromeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="practice_day_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.turntabl.Palindrome.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.turntabl.Palindrome" />
+      <option name="MAIN_CLASS_NAME" value="io.turntabl.Palindrome.PalindromeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PalindromeTest.isPalindrome2AssertsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="practice_day_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.turntabl.Palindrome.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.turntabl.Palindrome" />
+      <option name="MAIN_CLASS_NAME" value="io.turntabl.Palindrome.PalindromeTest" />
+      <option name="METHOD_NAME" value="isPalindrome2AssertsTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UniqueStringTest.isUniqueAssertsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="practice_day_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.turntabl.uniqueString.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.turntabl.uniqueString" />
+      <option name="MAIN_CLASS_NAME" value="io.turntabl.uniqueString.UniqueStringTest" />
+      <option name="METHOD_NAME" value="isUniqueAssertsTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UniqueStringTest.isUniqueAssertsTrue" />
+        <item itemvalue="JUnit.PalindromeTest.isPalindrome2AssertsTrue" />
+        <item itemvalue="JUnit.PalindromeTest" />
+        <item itemvalue="JUnit.MostCommonLeastCommonTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e309842c-a9d2-44f4-a4cb-65a7444da97d" name="Changes" comment="" />
+      <created>1683192346507</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683192346507</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Complete assignment">
+      <created>1683209856266</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683209856266</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Complete assignment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete assignment" />
+  </component>
+</project>

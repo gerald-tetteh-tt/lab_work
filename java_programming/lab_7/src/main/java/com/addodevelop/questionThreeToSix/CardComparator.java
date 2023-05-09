@@ -5,10 +5,10 @@ import java.util.Comparator;
 public class CardComparator implements Comparator<Card> {
     @Override
     public int compare(Card card1, Card card2) {
-        int valueCompareResult = card1.getValue().getOrder() - (card2.getValue().getOrder());
+        int valueCompareResult = card1.value().getOrder() - (card2.value().getOrder());
         if(valueCompareResult != 0) {
             return valueCompareResult;
         }
-        return card1.getSuit().name().compareTo(card2.getSuit().name());
+        return card1.suit().name().compareTo(card2.suit().name());
     }
 }

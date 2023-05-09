@@ -1,20 +1,6 @@
 package com.addodevelop.questionThreeToSix;
 
-public class Card implements Comparable<Card> {
-    private final CardSuit suit;
-    private final CardValue value;
-
-    public Card(CardSuit suit, CardValue value) {
-        this.suit = suit;
-        this.value = value;
-    }
-
-    public CardValue getValue() {
-        return this.value;
-    }
-    public CardSuit getSuit() {
-        return this.suit;
-    }
+public record Card(CardSuit suit, CardValue value) implements Comparable<Card> {
 
     @Override
     public String toString() {
@@ -28,8 +14,8 @@ public class Card implements Comparable<Card> {
 
     @Override
     public boolean equals(Object obj) {
-        if(this == obj) return true;
-        if(obj == null || obj.getClass() != this.getClass()) {
+        if (this == obj) return true;
+        if (obj == null || obj.getClass() != this.getClass()) {
             return false;
         }
         Card card = (Card) obj;
@@ -39,7 +25,7 @@ public class Card implements Comparable<Card> {
     @Override
     public int compareTo(Card card) {
         int valueCompareResult = this.value.getOrder() - (card.value.getOrder());
-        if(valueCompareResult != 0) {
+        if (valueCompareResult != 0) {
             return valueCompareResult;
         }
         return this.suit.name().compareTo(card.suit.name());
