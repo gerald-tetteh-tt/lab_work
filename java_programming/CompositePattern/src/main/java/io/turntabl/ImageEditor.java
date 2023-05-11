@@ -1,7 +1,7 @@
 package io.turntabl;
 
 public class ImageEditor {
-    private Graphic graphic;
+    private final Graphic graphic;
 
     public ImageEditor(Graphic graphic) {
         this.graphic = graphic;

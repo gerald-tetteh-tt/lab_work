@@ -4,4 +4,5 @@ class EquityTrade(id: String, val symbol: String, val quantity: Int, initialPric
   extends Trade(id, initialPrice) {
   
   override def isExecutable: Boolean = true
+  override def value: Double = quantity * price
 }

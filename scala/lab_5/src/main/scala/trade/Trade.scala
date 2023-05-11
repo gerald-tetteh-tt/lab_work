@@ -11,5 +11,7 @@ abstract class Trade(val id: String, initialPrice: Double) {
   
   def isExecutable: Boolean
   
+  def value: Double
+  
   override def toString = s"Trade($_price, $id) => ${if isExecutable then "EquityTrade" else "FXTrade"}"
 }
